@@ -88,6 +88,28 @@ namespace Tic_Tac_Toe
 
                 }
             }
+            else if ((button3.Text == "X" && button5.Text == "X" && button7.Text == "X") || (button3.Text == "O" && button5.Text == "O" && button7.Text == "O"))
+            {
+                if (playerlab == "Player 1")
+                {
+                    PlayerP.Text = "Player 2 Wins";
+                    SignLabel.Text = "";
+                    button1.Enabled = false; button2.Enabled = false; button3.Enabled = false;
+                    button4.Enabled = false; button5.Enabled = false; button6.Enabled = false;
+                    button7.Enabled = false; button8.Enabled = false; button9.Enabled = false;
+                    ReplayButton.Enabled = true;
+                }
+                else if (playerlab == "Player 2")
+                {
+                    PlayerP.Text = "Player 1 Wins";
+                    SignLabel.Text = "";
+                    button1.Enabled = false; button2.Enabled = false; button3.Enabled = false;
+                    button4.Enabled = false; button5.Enabled = false; button6.Enabled = false;
+                    button7.Enabled = false; button8.Enabled = false; button9.Enabled = false;
+                    ReplayButton.Enabled = true;
+
+                }
+            }
             else if ((button3.Text == "X" && button6.Text == "X" && button9.Text == "X") || (button3.Text == "O" && button6.Text == "O" && button9.Text == "O"))
             {
                 if (playerlab == "Player 1")
